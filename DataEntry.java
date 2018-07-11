@@ -46,7 +46,7 @@ public class DataEntry {
 	public StringProperty getText1() {	return txt1Property;	}
 	
 	public String getTxt2() {	return txt2Property.get();	}
-	public void setTxt2(String t2) { this.txt1Property.set(t2);	}
+	public void setTxt2(String t2) { this.txt2Property.set(t2);	}
 	public StringProperty getText2() {	return txt2Property;	}
 	
 	public String getTxt3() {	return txt3Property.get();	}
@@ -54,15 +54,15 @@ public class DataEntry {
 	public StringProperty getText3() {	return txt3Property;	}
 
 	public String getTxt4() {	return txt4Property.get();	}
-	public void setTxt4(String t4) { this.txt1Property.set(t4);	}
+	public void setTxt4(String t4) { this.txt4Property.set(t4);	}
 	public StringProperty getText4() {	return txt4Property;	}
 
 	public String getTxt5() {	return txt5Property.get();	}
-	public void setTxt5(String t5) { this.txt1Property.set(t5);	}
-	public StringProperty getText5() {	return txt1Property;	}
+	public void setTxt5(String t5) { this.txt5Property.set(t5);	}
+	public StringProperty getText5() {	return txt5Property;	}
 	
 	public String getTxt6() {	return txt6Property.get();	}
-	public void setTxt6(String t6) { this.txt1Property.set(t6);	}
+	public void setTxt6(String t6) { this.txt6Property.set(t6);	}
 	public StringProperty getText6() {	return txt6Property;	}
 	
 	public String getTxt7() {	return txt7Property.get();	}
@@ -70,7 +70,7 @@ public class DataEntry {
 	public StringProperty getText7() {	return txt7Property;	}
 	
 	public String getTxt8() {	return txt8Property.get();	}
-	public void setTxt8(String t8) { this.txt1Property.set(t8);	}
+	public void setTxt8(String t8) { this.txt8Property.set(t8);	}
 	public StringProperty getText8() {	return txt8Property;	}
 	
 	public String getTxt9() {	return txt9Property.get();	}
