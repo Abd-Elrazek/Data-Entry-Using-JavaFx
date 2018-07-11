@@ -110,7 +110,7 @@ public class DataEntryController {
     }
     
     @FXML
-    private void intialize()throws Exception{
+    private void initialize()throws Exception{
     	
     	rowNumber.setCellValueFactory(cellData -> cellData.getValue().getRNo().asObject());
     	
