@@ -7,6 +7,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DataEntryController">
@@ -50,35 +51,38 @@
             <Label layoutX="1217.0" layoutY="59.0" text="15" />
          </children>
       </AnchorPane>
-      <JFXButton fx:id="start" buttonType="RAISED" layoutX="887.0" layoutY="205.0" prefHeight="45.0" prefWidth="70.0" text="Start" textAlignment="CENTER">
+      <StackPane fx:id="stackPane2" layoutY="132.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <JFXButton fx:id="start" buttonType="RAISED" onAction="#startData" prefHeight="43.0" prefWidth="97.0" text="Start" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </StackPane>
+      <JFXButton fx:id="save" buttonType="RAISED" layoutX="464.0" layoutY="191.0" onAction="#insertData" prefHeight="43.0" prefWidth="97.0" text="Save" textAlignment="CENTER">
          <font>
-            <Font name="Arial Rounded MT Bold" size="15.0" />
+            <Font name="Arial Rounded MT Bold" size="20.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="lock" buttonType="RAISED" layoutX="887.0" layoutY="160.0" prefHeight="45.0" prefWidth="60.0" text="Lock" textAlignment="CENTER">
-         <font>
-            <Font name="Arial Rounded MT Bold" size="15.0" />
-         </font>
-      </JFXButton>
-      <JFXButton fx:id="save" buttonType="RAISED" layoutX="77.0" layoutY="183.0" onAction="#insertData" prefHeight="34.0" prefWidth="88.0" text="Save" textAlignment="CENTER">
-         <font>
-            <Font name="Arial Rounded MT Bold" size="15.0" />
-         </font>
-      </JFXButton>
-      <JFXTextField fx:id="searchRowNo" labelFloat="true" layoutX="241.0" layoutY="188.0" prefHeight="27.0" prefWidth="88.0" promptText="Enter Row No.">
+      <JFXTextField fx:id="searchRowNo" labelFloat="true" layoutX="857.0" layoutY="194.0" prefHeight="27.0" prefWidth="88.0" promptText="Enter Row No.">
          <font>
             <Font name="Arial Rounded MT Bold" size="12.0" />
          </font>
       </JFXTextField>
-      <JFXButton fx:id="update" buttonType="RAISED" layoutX="382.0" layoutY="183.0" onAction="#updateData" prefHeight="34.0" prefWidth="88.0" text="Update" textAlignment="CENTER">
-         <font>
-            <Font name="Arial Rounded MT Bold" size="15.0" />
-         </font>
-      </JFXButton>
+      <StackPane fx:id="stackPane" layoutX="952.0" layoutY="176.0" prefHeight="60.0" prefWidth="141.0">
+         <children>
+            <JFXButton fx:id="update" buttonType="RAISED" onAction="#updateData" prefHeight="43.0" prefWidth="97.0" text="Update" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </StackPane>
       <TableView fx:id="tabView" layoutX="21.0" layoutY="289.0" prefHeight="407.0" prefWidth="1238.0">
         <columns>
-          <TableColumn fx:id="rowNumber" editable="false" prefWidth="75.0" resizable="false" text="Row No." />
-          <TableColumn fx:id="c1" editable="false" prefWidth="75.0" sortable="false" text="1" />
+          <TableColumn fx:id="rowNumber" editable="false" prefWidth="56.0" resizable="false" text="Row No." />
+          <TableColumn fx:id="c1" editable="false" prefWidth="96.39999389648438" sortable="false" text="1" />
             <TableColumn fx:id="c2" editable="false" prefWidth="75.0" sortable="false" text="2" />
             <TableColumn fx:id="c3" editable="false" prefWidth="75.0" sortable="false" text="3" />
             <TableColumn fx:id="c4" editable="false" prefWidth="75.0" sortable="false" text="4" />
@@ -95,13 +99,13 @@
             <TableColumn fx:id="c15" editable="false" prefWidth="75.0" sortable="false" text="15" />
         </columns>
          <columnResizePolicy>
-            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            <TableView fx:constant="UNCONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
       <Separator layoutX="-2.0" layoutY="119.0" prefHeight="25.0" prefWidth="1280.0" />
-      <Label fx:id="resultConsole" layoutX="516.0" layoutY="153.0" prefHeight="111.0" prefWidth="131.0" textAlignment="CENTER" wrapText="true">
+      <Label fx:id="dayCount" alignment="CENTER" layoutX="1128.0" layoutY="152.0" prefHeight="111.0" prefWidth="131.0" style="-fx-background-color: grey;" textAlignment="CENTER" wrapText="true">
          <font>
-            <Font name="Arial Rounded MT Bold" size="17.0" />
+            <Font name="Arial Rounded MT Bold" size="32.0" />
          </font>
       </Label>
    </children>

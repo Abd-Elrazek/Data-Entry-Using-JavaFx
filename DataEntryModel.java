@@ -32,7 +32,7 @@ public class DataEntryModel {
 		String sql = "update Test set [1] = '"+t1+"', [2]= '"+t2+"', [3]= '"+t3+"', [4]='"+t4+"', "
 				+ "[5] = '"+t5+"', [6]= '"+t6+"', [7] = '"+t7+"', [8] = '"+t8+"', "
 						+ "[9] = '"+t9+"', [10] = '"+t10+"', [11] = '"+t11+"', [12] = '"+t12+"', [13] = '"+t1+"', [14] = '"+t14+"', [15] = '"+t15+"'"
-								+ "where [Row Number] = '"+rowNo+"'";
+								+ "where [Row_Number] = '"+rowNo+"'";
 		try {
 			DataEntryUtil.dbExecuteQuery(sql);
 			}
