@@ -12,74 +12,124 @@
 
 <AnchorPane maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DataEntryController">
    <children>
-      <AnchorPane prefHeight="118.0" prefWidth="1280.0">
+      <AnchorPane prefHeight="130.0" prefWidth="1280.0" style="-fx-background-color: #9ccc65;">
          <children>
-            <Label layoutX="14.0" prefHeight="45.0" prefWidth="184.0" text="Data Entry" textAlignment="CENTER">
+            <Label layoutX="14.0" prefHeight="37.0" prefWidth="188.0" text="PROJECT - V1" textAlignment="CENTER">
                <font>
-                  <Font name="Arial Rounded MT Bold" size="32.0" />
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
                </font>
             </Label>
-            <JFXTextField fx:id="t1" layoutX="49.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <JFXTextField fx:id="t2" layoutX="130.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <JFXTextField fx:id="t3" layoutX="215.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <JFXTextField fx:id="t4" layoutX="295.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <JFXTextField fx:id="t5" layoutX="378.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <JFXTextField fx:id="t6" layoutX="458.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <JFXTextField fx:id="t7" layoutX="541.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <JFXTextField fx:id="t8" layoutX="623.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <JFXTextField fx:id="t9" layoutX="704.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <JFXTextField fx:id="t10" layoutX="784.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <JFXTextField fx:id="t11" layoutX="864.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <JFXTextField fx:id="t12" layoutX="945.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <JFXTextField fx:id="t13" layoutX="1027.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <JFXTextField fx:id="t14" layoutX="1107.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <JFXTextField fx:id="t15" layoutX="1188.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
-            <Label layoutX="81.0" layoutY="59.0" text="1" />
-            <Label layoutX="162.0" layoutY="59.0" text="2" />
-            <Label layoutX="247.0" layoutY="59.0" text="3" />
-            <Label layoutX="327.0" layoutY="59.0" text="4" />
-            <Label layoutX="410.0" layoutY="59.0" text="5" />
-            <Label layoutX="490.0" layoutY="59.0" text="6" />
-            <Label layoutX="573.0" layoutY="59.0" text="7" />
-            <Label layoutX="655.0" layoutY="59.0" text="8" />
-            <Label layoutX="736.0" layoutY="59.0" text="9" />
-            <Label layoutX="813.0" layoutY="59.0" text="10" />
-            <Label layoutX="893.0" layoutY="59.0" text="11" />
-            <Label layoutX="974.0" layoutY="59.0" text="12" />
-            <Label layoutX="1056.0" layoutY="59.0" text="13" />
-            <Label layoutX="1136.0" layoutY="59.0" text="14" />
-            <Label layoutX="1217.0" layoutY="59.0" text="15" />
+            <Label alignment="CENTER" layoutX="969.0" prefHeight="37.0" prefWidth="302.0" text="SOUMYA JYOTI GHOSH">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="t1" disable="true" focusColor="#ff6f00" layoutX="49.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <JFXTextField fx:id="t2" disable="true" focusColor="#ff6f00" layoutX="130.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <JFXTextField fx:id="t3" disable="true" focusColor="#ff6f00" layoutX="215.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <JFXTextField fx:id="t4" disable="true" focusColor="#ff6f00" layoutX="295.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <JFXTextField fx:id="t5" disable="true" focusColor="#ff6f00" layoutX="378.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <JFXTextField fx:id="t6" disable="true" focusColor="#ff6f00" layoutX="458.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <JFXTextField fx:id="t7" disable="true" focusColor="#ff6f00" layoutX="541.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <JFXTextField fx:id="t8" disable="true" focusColor="#ff6f00" layoutX="623.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <JFXTextField fx:id="t9" disable="true" focusColor="#ff6f00" layoutX="704.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <JFXTextField fx:id="t10" disable="true" focusColor="#ff6f00" layoutX="784.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <JFXTextField fx:id="t11" disable="true" focusColor="#ff6f00" layoutX="864.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <JFXTextField fx:id="t12" disable="true" focusColor="#ff6f00" layoutX="945.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <JFXTextField fx:id="t13" disable="true" focusColor="#ff6f00" layoutX="1027.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <JFXTextField fx:id="t14" disable="true" focusColor="#ff6f00" layoutX="1107.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <JFXTextField fx:id="t15" disable="true" focusColor="#ff6f00" layoutX="1188.0" layoutY="79.0" prefHeight="25.0" prefWidth="70.0" />
+            <Label layoutX="81.0" layoutY="59.0" text="1">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="162.0" layoutY="59.0" text="2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="247.0" layoutY="59.0" text="3">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="327.0" layoutY="59.0" text="4">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="410.0" layoutY="59.0" text="5">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="490.0" layoutY="59.0" text="6">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="573.0" layoutY="59.0" text="7">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="655.0" layoutY="59.0" text="8">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="736.0" layoutY="59.0" text="9">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="813.0" layoutY="59.0" text="10">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="893.0" layoutY="59.0" text="11">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="974.0" layoutY="59.0" text="12">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="1056.0" layoutY="59.0" text="13">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="1136.0" layoutY="59.0" text="14">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="1217.0" layoutY="59.0" text="15">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
          </children>
       </AnchorPane>
-      <StackPane fx:id="stackPane2" layoutY="132.0" prefHeight="150.0" prefWidth="200.0">
+      <StackPane fx:id="stackPane2" layoutX="148.0" layoutY="138.0" prefHeight="71.0" prefWidth="141.0">
          <children>
-            <JFXButton fx:id="start" buttonType="RAISED" onAction="#startData" prefHeight="43.0" prefWidth="97.0" text="Start" textAlignment="CENTER">
+            <JFXButton fx:id="start" buttonType="RAISED" onAction="#startData" prefHeight="34.0" prefWidth="113.0" ripplerFill="#ff6f00" style="-fx-background-color: #c5e1a5;" text="START" textAlignment="CENTER">
                <font>
                   <Font name="Arial Rounded MT Bold" size="20.0" />
                </font>
             </JFXButton>
          </children>
       </StackPane>
-      <JFXButton fx:id="save" buttonType="RAISED" layoutX="464.0" layoutY="191.0" onAction="#insertData" prefHeight="43.0" prefWidth="97.0" text="Save" textAlignment="CENTER">
+      <JFXButton fx:id="save" buttonType="RAISED" disable="true" layoutX="462.0" layoutY="155.0" onAction="#insertData" prefHeight="37.0" prefWidth="113.0" ripplerFill="#ff6f00" style="-fx-background-color: #c5e1a5;" text="SAVE" textAlignment="CENTER">
          <font>
             <Font name="Arial Rounded MT Bold" size="20.0" />
          </font>
       </JFXButton>
-      <JFXTextField fx:id="searchRowNo" labelFloat="true" layoutX="857.0" layoutY="194.0" prefHeight="27.0" prefWidth="88.0" promptText="Enter Row No.">
+      <JFXTextField fx:id="searchRowNo" disable="true" focusColor="#ff6f00" labelFloat="true" layoutX="829.0" layoutY="160.0" prefHeight="27.0" prefWidth="88.0" promptText="Enter Row No.">
          <font>
             <Font name="Arial Rounded MT Bold" size="12.0" />
          </font>
       </JFXTextField>
-      <StackPane fx:id="stackPane" layoutX="952.0" layoutY="176.0" prefHeight="60.0" prefWidth="141.0">
+      <StackPane fx:id="stackPane" layoutX="950.0" layoutY="144.0" prefHeight="60.0" prefWidth="141.0">
          <children>
-            <JFXButton fx:id="update" buttonType="RAISED" onAction="#updateData" prefHeight="43.0" prefWidth="97.0" text="Update" textAlignment="CENTER">
+            <JFXButton fx:id="update" buttonType="RAISED" disable="true" onAction="#updateData" prefHeight="37.0" prefWidth="113.0" ripplerFill="#ff6f00" style="-fx-background-color: #c5e1a5;" text="UPDATE" textAlignment="CENTER">
                <font>
                   <Font name="Arial Rounded MT Bold" size="19.0" />
                </font>
             </JFXButton>
          </children>
       </StackPane>
-      <TableView fx:id="tabView" layoutX="21.0" layoutY="289.0" prefHeight="407.0" prefWidth="1238.0">
+      <TableView fx:id="tabView" layoutX="21.0" layoutY="257.0" prefHeight="439.0" prefWidth="1238.0">
         <columns>
           <TableColumn fx:id="rowNumber" editable="false" prefWidth="56.0" resizable="false" text="Row No." />
           <TableColumn fx:id="c1" editable="false" prefWidth="96.39999389648438" sortable="false" text="1" />
@@ -103,9 +153,9 @@
          </columnResizePolicy>
       </TableView>
       <Separator layoutX="-2.0" layoutY="119.0" prefHeight="25.0" prefWidth="1280.0" />
-      <Label fx:id="dayCount" alignment="CENTER" layoutX="1128.0" layoutY="152.0" prefHeight="111.0" prefWidth="131.0" style="-fx-background-color: grey;" textAlignment="CENTER" wrapText="true">
+      <Label fx:id="dayCount" alignment="CENTER" layoutX="1123.0" layoutY="144.0" prefHeight="34.0" prefWidth="126.0" textAlignment="CENTER" textFill="#bf360c" wrapText="true">
          <font>
-            <Font name="Arial Rounded MT Bold" size="32.0" />
+            <Font name="Arial Rounded MT Bold" size="31.0" />
          </font>
       </Label>
    </children>

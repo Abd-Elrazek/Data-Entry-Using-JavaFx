@@ -8,6 +8,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 
@@ -19,6 +20,8 @@ public class DataEntryMain extends Application {
 			Scene scene = new Scene(root,1280,700);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
+			primaryStage.getIcons().add(new Image("/icon/DataEntry.png"));
+			primaryStage.setTitle("VIRTAUCOM");
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
@@ -29,8 +32,8 @@ public class DataEntryMain extends Application {
 		
 		//creates a file for saving days count
 		try {
-			File file = new File("C:\\Users\\Acer\\Desktop\\count.txt");
-			File file2 = new File("C:\\Users\\Acer\\Desktop\\day.txt");
+			File file = new File("C:\\Database\\Resource\\xyxC.txt");//C is count
+			File file2 = new File("C:\\Database\\Resource\\mnbD.txt");//D is Day
 				if (!file.exists() && !file2.exists()) {
 						file.createNewFile();
 						file2.createNewFile();

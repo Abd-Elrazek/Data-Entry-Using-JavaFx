@@ -14,7 +14,7 @@ public class DataEntryUtil {
 	
 	private static Connection connection = null;
 	
-	static final String msAccDB = "C:/Users/Acer/Desktop/Test.accdb";
+	static final String msAccDB = "C:/Database/Project V1.accdb";
     static final String connSt = "jdbc:ucanaccess://" + msAccDB;
     
     public static void dbConnect() throws ClassNotFoundException, SQLException{

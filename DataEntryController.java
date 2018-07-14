@@ -112,10 +112,10 @@ public class DataEntryController {
     	BufferedReader br2 = null;
     	
 		try {
-			br = new BufferedReader(new FileReader("C:\\Users\\Acer\\Desktop\\day.txt"));
+			br = new BufferedReader(new FileReader("C:\\Database\\Resource\\mnbD.txt")); //D is day
 			line = br.readLine();	dayNo=Integer.parseInt(line);	
 			
-			br2 = new BufferedReader(new FileReader("C:\\Users\\Acer\\Desktop\\count.txt"));
+			br2 = new BufferedReader(new FileReader("C:\\Database\\Resource\\xyxC.txt")); //C is count 
 			line2 = br2.readLine();	dayC=Integer.parseInt(line2);
 			
 		} catch (IOException e) {
@@ -156,17 +156,17 @@ public class DataEntryController {
 			save.setDisable(true); update.setDisable(true);
 		}
 		
-		
+		//for taking the day count 
 		Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
 	       day = calendar.get(Calendar.DATE);
 	       
+	       //updating the file with current day
 	       if(day!=dayNo) {
 	    	   dayNo = day;
 	    	   dayC+=1;
-	    	   System.out.println("Day no "+dayNo+" Day count "+dayC);
 	    	   try {
-	    	   File file = new File("C:\\Users\\Acer\\Desktop\\day.txt");
-	    	   File file2 = new File("C:\\Users\\Acer\\Desktop\\count.txt");
+	    	   File file = new File("C:\\Database\\Resource\\mnbD.txt");
+	    	   File file2 = new File("C:\\Database\\Resource\\xyxC.txt");
 	    	   PrintWriter pw = new PrintWriter(file);
 	    	   PrintWriter pw2 = new PrintWriter(file2);
 	    	   pw.println(dayNo);
@@ -177,8 +177,10 @@ public class DataEntryController {
 	    		   e.printStackTrace();
 	    	   }
 	       }
+	       //Label Day Count
+	       dayCount.setText("DAY "+dayC);
 	       
-	       dayCount.setText("Day "+dayC);
+	       start.setDisable(true);
     }
     
     
@@ -196,6 +198,9 @@ public class DataEntryController {
     	t5.clear(); t6.clear(); t7.clear(); t8.clear();
     	t9.clear(); t10.clear(); t11.clear(); t12.clear();
     	t15.clear(); t14.clear(); t13.clear();
+    	
+    	//for changing the focus to to textfield t1
+    	t1.requestFocus();
     	
     	}
     	catch(SQLException e) {
@@ -238,6 +243,9 @@ public class DataEntryController {
         	t5.clear(); t6.clear(); t7.clear(); t8.clear();
         	t9.clear(); t10.clear(); t11.clear(); t12.clear();
         	t15.clear(); t14.clear(); t13.clear();
+        	
+        	//for changing the focus to to textfield t1
+        	t1.requestFocus();
         	
     	}
     		catch(SQLException e) {
