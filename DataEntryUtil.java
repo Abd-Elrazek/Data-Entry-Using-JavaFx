@@ -14,7 +14,7 @@ public class DataEntryUtil {
 	
 	private static Connection connection = null;
 	
-	static final String msAccDB = "C:/Database/Project V1.accdb";
+	static final String msAccDB = "C:/Database/Project V1.accdb;jackcessOpener=application.CryptCodecOpener";
     static final String connSt = "jdbc:ucanaccess://" + msAccDB;
     
     public static void dbConnect() throws ClassNotFoundException, SQLException{
@@ -32,7 +32,7 @@ public class DataEntryUtil {
     	System.out.println("JDBC Driver has been Registered");
     	//Connecting the database 
     	try {
-    		connection = DriverManager.getConnection(connSt, "", "");//blank is username and password
+    		connection = DriverManager.getConnection(connSt, "", "rj47@123");//location, username and password
     	}
     	catch(SQLException e) {
     		System.out.println("Connection Failed! Check Output Console "+e);
